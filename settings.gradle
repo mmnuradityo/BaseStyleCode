@@ -1,0 +1,2 @@
+include ':app', ':basestyle'
+rootProject.name='BaseStyle Code'

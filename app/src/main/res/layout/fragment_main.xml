@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".view.fragment.MainFragment">
+
+    <ImageView
+        android:id="@+id/iv_img_test"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/baseStyle_imageHeight"
+        android:layout_margin="@dimen/baseStyle_spaceSmall"
+        android:visibility="invisible"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_below="@+id/iv_img_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="yee ye ye yee ye yey"/>
+
+    <Button
+        android:id="@+id/btn_show_image"
+        android:layout_below="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/baseStyle_spaceSmall"
+        android:text="Show Image"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_show_Dilaog"
+        android:layout_below="@+id/tv_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/baseStyle_spaceSmall"
+        android:visibility="gone"
+        android:text="Show Dialog"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

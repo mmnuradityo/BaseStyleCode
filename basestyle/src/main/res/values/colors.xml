@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#303F9F</color>
+    <color name="colorPrimaryDark">#1A237E</color>
+    <color name="colorAccent">#EC407A</color>
+
+    <!--    Font Color      -->
+    <color name="baseStyle_primaryText">#212121</color>
+    <color name="baseStyle_secondaryText">#6F6F6F</color>
+    <color name="baseStyle_linkText">#001AFF</color>
+
+    <!--    Extra Color     -->
+    <color name="baseStyle_colorBackground">#F7F7F7</color>
+    <color name="baseStyle_colorGray">#C4C4C4</color>
+    <color name="baseStyle_elevation">#0F4F4F4F</color>
+    <color name="baseStyle_grayTransparent">#284F4F4F</color>
+    <color name="baseStyle_blackTransparent">#24000000</color>
+    <color name="baseStyle_blackLightTransparent">#18000000</color>
+    <color name="baseStyle_divider">#B6B6B6</color>
+</resources>

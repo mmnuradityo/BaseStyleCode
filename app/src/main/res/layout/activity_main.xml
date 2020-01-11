@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.MainBaseActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_data_main"
+        android:layout_above="@+id/btn_add_list_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:padding="@dimen/baseStyle_spaceSmall"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_list"/>
+
+    <com.example.basestyle.widget.ButtonRounded
+        android:id="@+id/btn_add_list_main"
+        android:layout_above="@+id/btn_add_data_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/baseStyle_spaceSmall"
+        android:text="Add list"
+        android:textAllCaps="false"
+        app:backgroundColor="@color/colorPrimary"
+        app:strokeColor="#000"
+        app:strokeSize="5"/>
+
+    <com.example.basestyle.widget.ButtonRounded
+        android:id="@+id/btn_add_data_main"
+        android:layout_above="@+id/btn_switch_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/baseStyle_spaceSmall"
+        android:text="Add Data"
+        android:textColor="@color/baseStyle_primaryText"
+        android:textAllCaps="false"
+        app:strokeColor="@color/colorPrimary"
+        app:strokeSize="6"
+        app:backgroundColor="#fff"/>
+
+    <com.example.basestyle.widget.ButtonRounded
+        android:id="@+id/btn_switch_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/baseStyle_spaceSmall"
+        android:onClick="btnSwitchToFragmentActivity"
+        android:layout_alignParentBottom="true"
+        android:text="Switch To Fragment Activity"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

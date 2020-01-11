@@ -1,0 +1,106 @@
+<resources>
+
+    <style name="BaseStyleTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="buttonStyle">@style/BaseStyleTheme.CustomButton</item>
+        <item name="buttonRoundedStyle">@style/BaseStyleTheme.CustomButton</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionOverflowButtonStyle">@style/BaseStyleTheme.CustomPopUpButton</item>
+        <item name="android:titleTextAppearance">@style/BaseStyleTheme.AppActionBarTitle</item>
+        <item name="android:textViewStyle">@style/BaseStyleTheme.CustomTextView</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:switchStyle" >@style/BaseStyleTheme.CustomSwitch</item>
+    </style>
+
+    <style name="BaseStyleTheme.CustomTabTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="BaseStyleTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/baseStyle_divider</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="BaseStyleTheme.AppActionBarTitle">
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/baseStyle_textAppBarTitleNormal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BaseStyleTheme.CustomTextView" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textSize">@dimen/baseStyle_textNormal</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/baseStyle_secondaryText</item>
+        <item name="android:textColorLink">@color/baseStyle_linkText</item>
+    </style>
+
+    <style name="BaseStyleTheme.CustomButton" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">@dimen/baseStyle_textButtonNormal</item>
+        <item name="android:background">@drawable/basestyle_bg_button_rounded</item>
+        <item name="android:elevation">@dimen/baseStyle_elevationSpace</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:radius">@dimen/baseStyle_buttonRadius</item>
+        <item name="android:paddingStart">@dimen/baseStyle_spaceNormal</item>
+        <item name="android:paddingEnd">@dimen/baseStyle_spaceNormal</item>
+        <item name="android:minWidth">@dimen/baseStyle_spaceNormal</item>
+    </style>
+
+    <style name="BaseStyleThemeNoActionBar" parent="BaseStyleTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="BaseStyleTheme.TabLayoutTextSelect">
+        <item name="android:textSize">@dimen/baseStyle_textNormal</item>
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BaseStyleTheme.CustomActionButton" parent="@android:style/Widget.ActionButton">
+        <item name="android:drawablePadding">@dimen/baseStyle_spaceZero</item>
+        <item name="android:layout_margin">@dimen/baseStyle_spaceSmallest</item>
+    </style>
+
+    <style name="BaseStyleTheme.CustomSwitch" parent="@style/Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/baseStyle_colorGray</item>
+        <item name="android:track">@drawable/basestyle_bg_switch_on_off</item>
+        <item name="android:thumb">@drawable/basestyle_circle_thumb</item>
+        <item name="switchTextAppearance">@style/BaseStyleTheme.CustomSwitchText</item>
+        <item name="android:textOn">@string/switch_blank_text</item>
+        <item name="android:textOff">@string/switch_blank_text</item>
+        <item name="android:thumbTextPadding">@dimen/baseStyle_paddingSwitch</item>
+        <item name="android:switchPadding">@dimen/baseStyle_paddingSwitch</item>
+        <item name="android:checked">false</item>
+        <item name="android:minWidth">@dimen/baseStyle_minWidthSwitch</item>
+        <item name="android:minHeight">@dimen/baseStyle_minHeightSwitch</item>
+    </style>
+
+    <style name="BaseStyleTheme.CustomSwitchText" parent="TextAppearance.AppCompat.Widget.Switch">
+        <item name="android:textSize">@dimen/baseStyle_textSwitchNormal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BaseStyleTheme.CustomPopUpButton" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@android:color/white</item>
+        <item name="android:tintMode">src_atop</item>
+    </style>
+
+</resources>

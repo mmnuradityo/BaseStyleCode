@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/baseStyle_elevation" />
+
+            <corners android:radius="@dimen/baseStyle_cornerRadius" />
+
+        </shape>
+
+    </item>
+
+    <item
+        android:bottom="1.6dp"
+        android:left="0.3dp"
+        android:right="0.6dp"
+        android:top="0.3dp">
+
+        <shape android:shape="rectangle">
+
+            <solid android:color="@color/baseStyle_elevation" />
+
+            <corners android:radius="@dimen/baseStyle_cornerRadius" />
+
+        </shape>
+
+    </item>
+
+    <item
+        android:bottom="@dimen/baseStyle_elevationSpace"
+        android:left="0.6dp"
+        android:right="1dp"
+        android:top="0.6dp">
+
+        <shape android:shape="rectangle">
+
+            <corners android:radius="@dimen/baseStyle_cornerRadius" />
+
+            <solid android:color="@android:color/white" />
+
+            <size
+                android:width="20dp"
+                android:height="40dp" />
+
+        </shape>
+    </item>
+
+</layer-list>

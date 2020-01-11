@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonRounded">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="strokeSize" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="BaseStyle">
+        <attr name="buttonRoundedStyle" format="reference"/>
+    </declare-styleable>
+</resources>

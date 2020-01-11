@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Space  -->
+    <dimen name="baseStyle_spaceZero">0dp</dimen>
+    <dimen name="baseStyle_spaceSmallest">2dp</dimen>
+    <dimen name="baseStyle_spaceSmaller">4dp</dimen>
+    <dimen name="baseStyle_spaceSmall">6dp</dimen>
+    <dimen name="baseStyle_spaceMedium">8dp</dimen>
+    <dimen name="baseStyle_spaceNormal">16dp</dimen>
+
+    <!--  Text  -->
+    <dimen name="baseStyle_textNormal">14sp</dimen>
+    <dimen name="baseStyle_textLarge">20sp</dimen>
+    <dimen name="baseStyle_textAppBarTitleNormal">13sp</dimen>
+    <dimen name="baseStyle_textButtonNormal">14sp</dimen>
+    <dimen name="baseStyle_textSwitchNormal">12sp</dimen>
+
+    <!--  Extra Dimens -->
+    <dimen name="baseStyle_cornerRadius">6dp</dimen>
+    <dimen name="baseStyle_dialogCornerRadius">14dp</dimen>
+    <dimen name="baseStyle_elevationSpace">3dp</dimen>
+    <dimen name="baseStyle_imageHeight">100dp</dimen>
+    <dimen name="baseStyle_minHeightDialog">260dp</dimen>
+    <dimen name="baseStyle_minWidthSwitch">40dp</dimen>
+    <dimen name="baseStyle_minHeightSwitch">16dp</dimen>
+    <dimen name="baseStyle_paddingSwitch">12dp</dimen>
+    <dimen name="baseStyle_buttonRadius">60dp</dimen>
+</resources>

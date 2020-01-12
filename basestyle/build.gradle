@@ -1,4 +1,21 @@
 apply plugin: 'com.android.library'
+
+//publish {
+//
+//    def groupProjectID = 'com.nuradityo.basestyle'
+//    def artifactProjectID = 'BaseStyleCode'
+//    def publishVersionID = '0.0.1'
+//
+//    userOrg = 'nuradityo'
+//    repoName = 'BaseStyleCode'
+//    groupId = groupProjectID
+//    artifactId = artifactProjectID
+//    publishVersion = publishVersionID
+//    desc = 'Base Style Code and Theme'
+//    website = 'https://bitbucket.org/nuradityo/base-style-code'
+//
+//}
+
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 android {
@@ -38,3 +55,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+

@@ -16,7 +16,7 @@
         android:gravity="center"
         android:text="Cutome Dialog"/>
 
-    <com.example.basestyle.widget.ButtonRounded
+    <com.mmnuradityo.basestyle.widget.ButtonRounded
         android:id="@+id/btn_close_custome_dialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

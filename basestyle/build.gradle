@@ -1,23 +1,48 @@
 apply plugin: 'com.android.library'
 
-//publish {
-//
-//    def groupProjectID = 'com.nuradityo.basestyle'
-//    def artifactProjectID = 'BaseStyleCode'
-//    def publishVersionID = '0.0.1'
-//
-//    userOrg = 'nuradityo'
-//    repoName = 'BaseStyleCode'
-//    groupId = groupProjectID
-//    artifactId = artifactProjectID
-//    publishVersion = publishVersionID
-//    desc = 'Base Style Code and Theme'
-//    website = 'https://bitbucket.org/nuradityo/base-style-code'
-//
-//}
-
 apply plugin: 'kotlin-android'
+
 apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.github.dcendents.android-maven'
+
+apply plugin: "com.jfrog.bintray"
+
+apply plugin: "com.jfrog.artifactory"
+
+apply plugin: "maven-publish"
+
+publishing {
+    publications {
+        Publication(MavenPublication) {
+            groupId 'com.nuradityo'
+            artifactId 'basestyle'
+            version '0.1'
+        }
+    }
+}
+
+bintray {
+    user = 'nuradityo'
+    key = '1ef550e0271310364117cc1b30d71c118eab6612'
+    publications = ['Publication']
+
+    pkg {
+        repo = 'BaseStyleCode'
+        name = 'basestyle'
+        userOrg = 'nuradityo'
+        licenses = ['Apache-2.0']
+        websiteUrl = 'https://github.com/mmnuradityo/BaseStyleCode'
+        vcsUrl = 'https://github.com/mmnuradityo/BaseStyleCode.git'
+        version {
+            name = '0.0.1'
+            desc = 'Base Style Code and Theme'
+            released  = new Date()
+            vcsTag = '0.0.1'
+        }
+    }
+}
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -27,7 +52,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "0.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -40,6 +65,19 @@ android {
         }
     }
 
+}
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'org.jfrog.buildinfo:build-info-extractor-gradle:4.4.18'
+    }
 }
 
 dependencies {
@@ -55,4 +93,3 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
-

@@ -19,6 +19,7 @@ ext {
     artifact = 'basestyle'
     libraryDescription = 'Base Style Code and Theme'
 
+    siteUrlissues = 'https://github.com/mmnuradityo/BaseStyleCode/issues'
     siteUrl = 'https://github.com/mmnuradityo/BaseStyleCode'
     gitUrl = 'https://github.com/mmnuradityo/BaseStyleCode.git'
 
@@ -90,6 +91,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
+group = publishedGroupId
+version = libraryVersion
+
 install {
     repositories.mavenInstaller {
         pom.project {
@@ -150,10 +154,10 @@ bintray {
         userOrg = developerName
 
         websiteUrl = siteUrl
-        issueTrackerUrl = siteUrl
+        issueTrackerUrl = siteUrlissues
         vcsUrl = gitUrl
         licenses = allLicenses
-        
+
         developerId = developerId
         developerEmail = developerEmail
         developerName = developerName

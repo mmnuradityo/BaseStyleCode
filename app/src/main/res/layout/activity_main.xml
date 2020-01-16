@@ -18,7 +18,7 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:listitem="@layout/item_list"/>
 
-    <com.mmnuradityo.basestyle.widget.ButtonRounded
+    <com.nuradityo.basestyle.widget.ButtonRounded
         android:id="@+id/btn_add_list_main"
         android:layout_above="@+id/btn_add_data_main"
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
         app:strokeColor="#000"
         app:strokeSize="5"/>
 
-    <com.mmnuradityo.basestyle.widget.ButtonRounded
+    <com.nuradityo.basestyle.widget.ButtonRounded
         android:id="@+id/btn_add_data_main"
         android:layout_above="@+id/btn_switch_main"
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         app:strokeSize="6"
         app:backgroundColor="@android:color/white"/>
 
-    <com.mmnuradityo.basestyle.widget.ButtonRounded
+    <com.nuradityo.basestyle.widget.ButtonRounded
         android:id="@+id/btn_switch_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

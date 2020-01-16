@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.mmnuradityo.basestylecode">
+    package="com.nuradityo.basestylecode">
 
     <application
         android:allowBackup="true"
@@ -13,7 +13,7 @@
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
         <activity
-            android:name="com.mmnuradityo.basestylecode.view.activity.SplashActivity"
+            android:name="com.nuradityo.basestylecode.view.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -23,10 +23,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mmnuradityo.basestylecode.view.activity.FragmentActivity"
+            android:name="com.nuradityo.basestylecode.view.activity.FragmentActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.mmnuradityo.basestylecode.view.activity.MainBaseActivity"
+            android:name="com.nuradityo.basestylecode.view.activity.MainBaseActivity"
             android:screenOrientation="portrait"/>
 
     </application>
